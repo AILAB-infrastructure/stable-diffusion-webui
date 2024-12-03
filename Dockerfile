@@ -17,5 +17,5 @@ COPY webui.sh /home/$USERNAME/
 # RUN pip install -r /home/requirements.txt
 # RUN bash webui.sh
 
-ENTRYPOINT ["bash", "webui.sh", "--nowebui", "--listen", "--port", "7860"]
+ENTRYPOINT ["bash", "webui.sh", "--listen", "--port", "7860"]
 # ENTRYPOINT ["python", "webui.py", "--nowebui", "--listen"]
