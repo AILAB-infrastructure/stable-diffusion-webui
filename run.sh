@@ -21,7 +21,7 @@ PORT="$(find_next_port)"
 docker build --tag "$NAME" -f Dockerfile .
 docker run \
     --restart unless-stopped \
-    -p $PORT:8080 \
+    -p $PORT:7860 \
     -e PAGE="$NAME|$PORT" \
     --env-file .env \
     --gpus all \
