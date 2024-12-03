@@ -19,7 +19,7 @@
 #export GIT="git"
 
 # python3 venv without trailing slash (defaults to ${install_dir}/${clone_dir}/venv)
-#venv_dir="venv"
+venv_dir="-"
 
 # script to launch to start the app
 #export LAUNCH_SCRIPT="launch.py"
