@@ -1,4 +1,4 @@
-NAME="stable_diffucion"
+NAME="stable_diffusion"
 
 
 find_next_port() {
@@ -23,6 +23,5 @@ docker run \
     --restart unless-stopped \
     -p $PORT:7860 \
     -e PAGE="$NAME|$PORT" \
-    --env-file .env \
     --gpus all \
     -d $NAME
